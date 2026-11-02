@@ -1,0 +1,22 @@
+{
+  "name": "memeprofit-ai",
+  "main": "worker.js",
+  "compatibility_date": "2025-11-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "memeprofit-db",
+      "database_id": "d7cd2432-4056-4e18-a0d3-fd660718232c"
+    }
+  ],
+  "triggers": {
+    "crons": ["* * * * *"]
+  },
+  "observability": {
+    "enabled": true
+  }
+}
